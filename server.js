@@ -63,6 +63,10 @@ app.use((err, req, res, next) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.send("BEPL API is running");
+});
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
